@@ -11,6 +11,9 @@ public class PauseMenu : MonoBehaviour
     //stop playing music when game isPaused
     public AudioSource musicAudioSource;
 
+    public Canvas gameCanvas;
+    public GameObject gameCanvas2;
+
     // Update is called once per frame
     void Update()
     {
@@ -19,11 +22,16 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                gameCanvas.enabled = true;
+                gameCanvas2.SetActive(true);
             }
             else 
             {
                 Pause();
+                gameCanvas.enabled = false;
+                gameCanvas2.SetActive(false);
             }
+            
         }
     }
     
@@ -35,6 +43,8 @@ public class PauseMenu : MonoBehaviour
 
         Cursor.visible = false;
         musicAudioSource.UnPause();
+        gameCanvas.enabled = true;
+        gameCanvas2.SetActive(true);
         
     }
 

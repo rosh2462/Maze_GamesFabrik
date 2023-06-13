@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RandomSpawn : MonoBehaviour
 {
-    public Transform[] spawnPoints;  // Array of spawn points
+    public Transform[] spawnPoints;
 
     private void Start()
     {
@@ -11,10 +11,8 @@ public class RandomSpawn : MonoBehaviour
 
     private void SpawnPlayer()
     {
-        // Randomly select a spawn point from the spawnPoints array
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
-        // Move the player to the selected spawn point
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
     }

@@ -14,4 +14,10 @@ public class RestartGameButton : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void NextGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("GameLevelTwo");
+    }
 }

@@ -5432,8 +5432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8681377643031911391}
-  damageAmount: 7
-  damageInterval: 2
+  damageAmount: 10
+  damageInterval: 1
 --- !u!136 &871077062
 CapsuleCollider:
   m_ObjectHideFlags: 0

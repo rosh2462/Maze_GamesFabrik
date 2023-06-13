@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame ()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("GameLevelOne");
         
         Time.timeScale = 1f;
         Cursor.visible = true;

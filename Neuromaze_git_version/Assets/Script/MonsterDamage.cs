@@ -14,7 +14,7 @@ public class MonsterDamage : MonoBehaviour
     private void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        float attackRange = 2f;
+        float attackRange = 1f;
 
         if (distance <= attackRange)
         {

@@ -7,7 +7,7 @@ public class MonsterDamage : MonoBehaviour
 {
     public GameObject player;
     public int damageAmount = 10;
-    public float damageInterval = 2f; // Time between each damage in seconds
+    public float damageInterval = 1f; // Time between each damage in seconds
 
     private float damageTimer = 0f; // Timer to track the interval between damages
 
